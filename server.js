@@ -3,13 +3,13 @@ if (process.env.NODE_ENV !== 'production') {
 }
 const express = require('express'); //import express module
 const app = express(); //create an express app
-const port = 3000; //localhost port
+const port = 8080; //localhost port
 const fetch = require('node-fetch');
 
 app.use(express.static('public')); //serving static files
 
 app.listen(port, () => {
-    console.log('Server is running!'); //server listen
+    console.log('App is running on port 8080'); //server listen
 });
 
 const api_key = process.env.API_KEY;
